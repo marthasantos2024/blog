@@ -23,6 +23,7 @@ class UsuariosSeeder extends Seeder
             'updated_at'=>now()
         ]);
     },
+
     down:: async (queryInterface, Sequelize) =>{
         return queryInterface.bulkDelete('users',{ username::'nuevo_usuario'},{});
     }
