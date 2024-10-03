@@ -29,7 +29,7 @@
 </style>
 
 {{-- Definimos el título --}}
-@section('title', 'Usuarios')
+@section('title', 'Usuario')
 
 {{-- Definimos el contenido --}}
 @section('content')

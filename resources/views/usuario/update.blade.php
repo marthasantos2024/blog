@@ -25,7 +25,7 @@ h1 {
     <hr>
 
     {{-- Formulario de edición --}}
-    <form action="{{ route('usuarios.update', $usuario->id) }}" method="POST">
+    <form action="{{ route('usuario.update', $usuario->id) }}" method="POST">
         @csrf
         @method('PUT') {{-- Método para indicar que es una actualización --}}
 

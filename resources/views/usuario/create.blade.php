@@ -81,7 +81,7 @@ button[type="submit"]:hover {
 <div class="container">
     <h2>Crear nuevo usuario</h2>
 
-    <form action="{{ route('usuarios.store') }}" method="POST">
+    <form action="{{ route('usuario.store') }}" method="POST">
         
         
         <div class="form-group">
