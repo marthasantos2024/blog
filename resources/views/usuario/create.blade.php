@@ -77,12 +77,12 @@ button[type="submit"]:hover {
 }
 
 </style>
+@csrf
 <div class="container">
     <h2>Crear nuevo usuario</h2>
 
     <form action="{{ route('usuarios.store') }}" method="POST">
-        @csrf
-
+        
         
         <div class="form-group">
             <label for="nombre">Nombre</label>
