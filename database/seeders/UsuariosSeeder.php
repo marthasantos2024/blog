@@ -23,7 +23,7 @@ class UsuariosSeeder extends Seeder
             'contraseña' => Hash::make('password123'), // Contraseña encriptada
             'rol' => 'admin',
             'created_at' => Carbon::now(),
-            'updated_at' => Carbon::now(),
+            'updated_at' => Carbon::now()
         ],
 
         //crear usuario autor
@@ -33,7 +33,7 @@ class UsuariosSeeder extends Seeder
             'contraseña' => Hash::make('password456'), 
             'rol' => 'autor',
             'created_at' => Carbon::now(),
-            'updated_at' => Carbon::now(),
+            'updated_at' => Carbon::now()
         ],
         
        [
@@ -42,7 +42,7 @@ class UsuariosSeeder extends Seeder
             'contraseña' => Hash::make('password789'), 
             'rol' => 'lector',
             'created_at' => Carbon::now(),
-            'updated_at' => Carbon::now(),
+            'updated_at' => Carbon::now()
         ]
     );
     DB::table('Usuarios')->insert($data);

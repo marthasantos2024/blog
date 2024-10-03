@@ -18,27 +18,27 @@ class Publicaciones_etiquetasSeeder extends Seeder
             'publicacion_id' => 1, // id de una publicacion exixtente
             'etiqueta_id' => 1, //id de una etiqueta existente 
             'created_at' => Carbon::now(),
-            'updated' => Carbon::now(),
+            'updated' => Carbon::now()
         ],
         [
             'publicacion_id' => 1,
             'etiqueta_id' => 2,
             'created_at' => Carbon::now(),
-            'updated' => Carbon::now(), 
+            'updated' => Carbon::now()
         ],
         [
             'publicacion_id' => 2,
             'etiqueta_id' => 1,
             'created_at' => Carbon::now(),
-            'updated' => Carbon::now(), 
+            'updated' => Carbon::now()
         ],
         [
             'publicacion_id' => 2,
             'etiqueta_id' => 3,
             'created_at' => Carbon::now(),
-            'updated' => Carbon::now(), 
+            'updated' => Carbon::now()
         ]
     );
-        DB::table('publicaciones_etiquetas')->insert($data);
+        DB::table('Publicaciones_etiquetas')->insert($data);
     }
 }

@@ -39,6 +39,6 @@ class ConfiguracionesSeeder extends Seeder
            'updated_at' => Carbon::now()
        ]
     );
-    DB::table('configuraciones')->insert($data);
+    DB::table('Configuraciones')->insert($data);
     }
 }

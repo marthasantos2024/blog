@@ -25,7 +25,7 @@ class ComentariosSeeder extends Seeder
             'body'=>'Este es un comentario de un usuario registrado.',
             'aprobado'=> true, //comentario aprobado
             'created_at'=>Carbon::now(),
-            'updated_at'=>Carbon::now(),
+            'updated_at'=>Carbon::now()
         ],
 
         //comentario anónimo
@@ -37,7 +37,7 @@ class ComentariosSeeder extends Seeder
             'body'=>'Este es un comentario anónimo.',
             'aprobado'=> false, //comentario pendiente de aprobacion
             'created_at'=>Carbon::now(),
-            'updated_at'=>Carbon::now(),
+            'updated_at'=>Carbon::now()
         ],
 
         [
@@ -48,9 +48,9 @@ class ComentariosSeeder extends Seeder
             'body'=>'Este es otrocomentario de un usuario registro.',
             'aprobado'=> true,
             'created_at'=>Carbon::now(),
-            'updated_at'=>Carbon::now(),
+            'updated_at'=>Carbon::now()
         ]
         );
-        DB::table('comentarios')->insert($data);
+        DB::table('Comentarios')->insert($data);
     }
 }
