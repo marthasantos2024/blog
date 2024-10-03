@@ -15,41 +15,39 @@ class EtiquetasSeeder extends Seeder
      */
     public function run(): void
     {
-<<<<<<< HEAD
         // crear etiquetas 
 
-        Etiqueta::create([
+        $data = array ([
             'nombre'=>'Laravel',
             'slug '=>'laravel',
             'created_at'=>Carbon::now(),
             'updated_at'=>Carbon::now(),       
-        ]);
+        ],
 
-        Etiqueta::create([
+        [
             'nombre'=>'PHP',
             'slug '=>'php',
             'created_at'=>Carbon::now(),
             'updated_at'=>Carbon::now(),       
-        ]);
+        ],
 
-        Etiqueta::create([
+        [
             'nombre'=>'JavaScript',
             'slug '=>'javasccript',
             'created_at'=>Carbon::now(),
             'updated_at'=>Carbon::now(),       
-        ]);
+        ],
 
-        Etiqueta::create([
+       [
             'nombre'=>'CSS',
             'slug '=>'css',
             'created_at'=>Carbon::now(),
             'updated_at'=>Carbon::now(),       
-        ]);
+        ]
+    );
 
 
-=======
-        //
-      
->>>>>>> 04eaa069c89a298eaf238ebc0e1c348b75e7b0ab
+        DB::table('Etiquetas')->insert($data);
+
     }
 }

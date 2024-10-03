@@ -14,43 +14,37 @@ class UsuariosSeeder extends Seeder
      * Run the database seeds.
      */
     public function run(): void
-<<<<<<< HEAD
+
     {
         // crear usuario administrador
-        Usuario::create([
+        $data = array([
             'nombre' => 'Admin User',
             'correo' => 'admin@example.com',
             'contraseña' => Hash::make('password123'), // Contraseña encriptada
             'rol' => 'admin',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
-        ]);
+        ],
 
         //crear usuario autor
-        Usuario::create([
+        [
             'nombre' => 'Autor Usuario',
             'correo' => 'autor@example.com',
             'contraseña' => Hash::make('password456'), 
             'rol' => 'autor',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
-        ]);
+        ],
         
-        Usuario::create([
+       [
             'nombre' => 'Lector Usuario',
             'correo' => 'lector@example.com',
             'contraseña' => Hash::make('password789'), 
             'rol' => 'lector',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
-        ]);
-        
+        ]
+    );
+    DB::table('Usuarios')->insert($data);
     }
-}
-=======
-    
-{
-    
-}
 };
->>>>>>> 04eaa069c89a298eaf238ebc0e1c348b75e7b0ab
