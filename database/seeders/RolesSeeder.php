@@ -14,12 +14,8 @@ class RolesSeeder extends Seeder
      */
     public function run(): void
     {
-<<<<<<< HEAD
-        
-    }
     
-}
-=======
+
        $data = array([
         'nombre' => 'Admin',
         'descripcion' => 'Usuario con control total sobre la aplicacion',
@@ -44,4 +40,4 @@ class RolesSeeder extends Seeder
         DB::tabla('roles')->insert($data);
     }
 }
->>>>>>> 04eaa069c89a298eaf238ebc0e1c348b75e7b0ab
+
