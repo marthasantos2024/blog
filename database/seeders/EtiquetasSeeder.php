@@ -13,5 +13,6 @@ class EtiquetasSeeder extends Seeder
     public function run(): void
     {
         //
+      
     }
 }

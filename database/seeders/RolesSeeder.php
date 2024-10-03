@@ -17,20 +17,20 @@ class RolesSeeder extends Seeder
        $data = array([
         'nombre' => 'Admin',
         'descripcion' => 'Usuario con control total sobre la aplicacion',
-        'created_at' => carbon::now(),
-        'updated_at' => carbon::now(),
+        'created_at' => Carbon::now(),
+        'updated_at' => Carbon::now(),
        ],
        [
         'nombre' => 'Editor',
         'descripcion' => 'Usuario con permisos para crear y editar contenido',
-        'created_at' => carbon::now(),
-        'updated_at' => carbon::now(),
+        'created_at' => Carbon::now(),
+        'updated_at' => Carbon::now(),
        ],
        [
         'nombre' => 'Usuario',
         'descripcion' => 'Usuario regular con acceso limitado a las funcionalidades',
-        'created_at' => carbon::now(),
-        'updated_at' => carbon::now(),
+        'created_at' => Carbon::now(),
+        'updated_at' => Carbon::now(),
        ]
        );
  
