@@ -4,6 +4,8 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+use Carbon\Carbon;
 
 class RolesSeeder extends Seeder
 {
@@ -12,13 +14,27 @@ class RolesSeeder extends Seeder
      */
     public function run(): void
     {
-        //
-        // Schema::create('roles',function (Blueprint $table)) ({
-        //     $table->id();
-        //     $table->string('name');
-        //     $table->timestamps();
-        // });
-    }
+       $data = array([
+        'nombre' => 'Admin',
+        'descripcion' => 'Usuario con control total sobre la aplicacion',
+        'created_at' => carbon::now(),
+        'updated_at' => carbon::now(),
+       ],
+       [
+        'nombre' => 'Editor',
+        'descripcion' => 'Usuario con permisos para crear y editar contenido',
+        'created_at' => carbon::now(),
+        'updated_at' => carbon::now(),
+       ],
+       [
+        'nombre' => 'Usuario',
+        'descripcion' => 'Usuario regular con acceso limitado a las funcionalidades',
+        'created_at' => carbon::now(),
+        'updated_at' => carbon::now(),
+       ]
+       );
+ 
     //tabla intermedia si un usuario tener multiples roles
-    Schema::create('roles_user',)
+        DB::tabla('roles')->insert($data);
+    }
 }
