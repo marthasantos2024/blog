@@ -4,6 +4,8 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\support\Facades\DB;
+use Carbon\Carbon;
 
 class Imagenes_archivosSeeder extends Seeder
 {
