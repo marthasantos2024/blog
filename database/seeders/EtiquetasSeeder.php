@@ -15,6 +15,7 @@ class EtiquetasSeeder extends Seeder
      */
     public function run(): void
     {
+<<<<<<< HEAD
         // crear etiquetas 
 
         Etiqueta::create([
@@ -46,5 +47,9 @@ class EtiquetasSeeder extends Seeder
         ]);
 
 
+=======
+        //
+      
+>>>>>>> 04eaa069c89a298eaf238ebc0e1c348b75e7b0ab
     }
 }

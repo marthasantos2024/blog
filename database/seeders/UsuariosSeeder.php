@@ -14,6 +14,7 @@ class UsuariosSeeder extends Seeder
      * Run the database seeds.
      */
     public function run(): void
+<<<<<<< HEAD
     {
         // crear usuario administrador
         Usuario::create([
@@ -46,3 +47,10 @@ class UsuariosSeeder extends Seeder
         
     }
 }
+=======
+    
+{
+    
+}
+};
+>>>>>>> 04eaa069c89a298eaf238ebc0e1c348b75e7b0ab
