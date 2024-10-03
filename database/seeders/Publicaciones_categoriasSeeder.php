@@ -40,6 +40,6 @@ class Publicaciones_categoriasSeeder extends Seeder
         ]
         );
 
-        DB::table('publicaciones_categorias')->insert($data);
+        DB::table('Publicaciones_categorias')->insert($data);
     }
 }
