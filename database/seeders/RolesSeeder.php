@@ -12,13 +12,7 @@ class RolesSeeder extends Seeder
      */
     public function run(): void
     {
-        //
-        // Schema::create('roles',function (Blueprint $table)) ({
-        //     $table->id();
-        //     $table->string('name');
-        //     $table->timestamps();
-        // });
+        
     }
-    //tabla intermedia si un usuario tener multiples roles
-    Schema::create('roles_user',)
+    
 }
