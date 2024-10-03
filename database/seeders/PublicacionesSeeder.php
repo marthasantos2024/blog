@@ -24,7 +24,7 @@ class PublicacionesSeeder extends Seeder
         'ususario_id'=> 1, //Aumiendo que ya tienes usuarios en la tabla usuarios
         'estado'=>'published',//puedes tenr estados como draft o published
         'imagen_fracturada'=>'imagen1.jpg',//imagen opcional
-        'publicado_en'=>Carbon::now(),//fecha de publicacion
+        'publicado_en'=>Carbon::now() //fecha de publicacion
        ],
 
        [
@@ -35,7 +35,7 @@ class PublicacionesSeeder extends Seeder
         'ususario_id'=> 2, //relacion con otro usuario
         'estado'=>'draft',
         'imagen_fracturada'=>'imagen2.jpg',
-        'publicado_en'=> null,// au no publicada
+        'publicado_en'=> null // au no publicada
 
        ],
 
@@ -47,11 +47,11 @@ class PublicacionesSeeder extends Seeder
         'ususario_id'=> 1, //relacion con otro usuario
         'estado'=>'published',
         'imagen_fracturada'=>'imagen3.jpg',
-        'publicado_en'=>Carbon::parse('2024-01-15'),// fecha de publicación
+        'publicado_en'=>Carbon::parse('2024-01-15') // fecha de publicación
 
        ]
     );
-    DB::table('configuraciones')->insert($data);
+    DB::table('Publicaciones')->insert($data);
     }
 
 }

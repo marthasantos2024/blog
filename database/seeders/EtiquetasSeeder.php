@@ -22,28 +22,28 @@ class EtiquetasSeeder extends Seeder
             'nombre'=>'Laravel',
             'slug '=>'laravel',
             'created_at'=>Carbon::now(),
-            'updated_at'=>Carbon::now(),       
+            'updated_at'=>Carbon::now()       
         ],
 
         [
             'nombre'=>'PHP',
             'slug '=>'php',
             'created_at'=>Carbon::now(),
-            'updated_at'=>Carbon::now(),       
+            'updated_at'=>Carbon::now()       
         ],
 
         [
             'nombre'=>'JavaScript',
             'slug '=>'javasccript',
             'created_at'=>Carbon::now(),
-            'updated_at'=>Carbon::now(),       
+            'updated_at'=>Carbon::now()       
         ],
 
        [
             'nombre'=>'CSS',
             'slug '=>'css',
             'created_at'=>Carbon::now(),
-            'updated_at'=>Carbon::now(),       
+            'updated_at'=>Carbon::now()       
         ]
     );
 

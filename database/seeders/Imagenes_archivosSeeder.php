@@ -23,7 +23,7 @@ class Imagenes_archivosSeeder extends Seeder
             'tipo_archivo' => 'image/jpeg',
             'size' => 1048576, // Tamaño en bytes (1 MB)
             'created_at' => Carbon::now(),
-            'updated_at' => Carbon::now(),
+            'updated_at' => Carbon::now()
         ],
 
         [
@@ -32,7 +32,7 @@ class Imagenes_archivosSeeder extends Seeder
             'tipo_archivo' => 'aplication/pdf',
             'size' => 204800, // Tamaño en bytes (200 MB)
             'created_at' => Carbon::now(),
-            'updated_at' => Carbon::now(),
+            'updated_at' => Carbon::now()
         ],
 
         [
@@ -41,7 +41,7 @@ class Imagenes_archivosSeeder extends Seeder
             'tipo_archivo' => 'audio/mpeg',
             'size' => 5120000, // Tamaño en bytes (5 MB)
             'created_at' => Carbon::now(),
-            'updated_at' => Carbon::now(),
+            'updated_at' => Carbon::now()
         ]
     ); 
     DB::table('Imagen_archivos')->insert($data);
