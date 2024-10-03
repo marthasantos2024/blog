@@ -6,6 +6,7 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\support\Facades\DB;
 use Illuminate\support\Facades\Hash;
 use Illuminate\Database\Seeder;
+use Carbon\Carbon;
 
 class UsuariosSeeder extends Seeder
 {
@@ -14,17 +15,34 @@ class UsuariosSeeder extends Seeder
      */
     public function run(): void
     {
-        //
-        DB::table('users')->insert([
-            'name'=>'nuevo_usuario',
-            'email'=>'usuario@example.com',
-            'password'=>Hash::make('contraseña'),
-            'created_at'=>now(),
-            'updated_at'=>now()
+        // crear usuario administrador
+        Usuario::create([
+            'nombre' => 'Admin User',
+            'correo' => 'admin@example.com',
+            'contraseña' => Hash::make('password123'), // Contraseña encriptada
+            'rol' => 'admin',
+            'created_at' => Carbon::now(),
+            'updated_at' => Carbon::now(),
         ]);
-    },
 
-    down:: async (queryInterface, Sequelize) =>{
-        return queryInterface.bulkDelete('users',{ username::'nuevo_usuario'},{});
+        //crear usuario autor
+        Usuario::create([
+            'nombre' => 'Autor Usuario',
+            'correo' => 'autor@example.com',
+            'contraseña' => Hash::make('password456'), 
+            'rol' => 'autor',
+            'created_at' => Carbon::now(),
+            'updated_at' => Carbon::now(),
+        ]);
+        
+        Usuario::create([
+            'nombre' => 'Lector Usuario',
+            'correo' => 'lector@example.com',
+            'contraseña' => Hash::make('password789'), 
+            'rol' => 'lector',
+            'created_at' => Carbon::now(),
+            'updated_at' => Carbon::now(),
+        ]);
+        
     }
-};
+}
