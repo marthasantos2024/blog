@@ -2,14 +2,13 @@
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\CategoriaController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UsuariosController;
 
-
-Route::get('/', function () {
+Route::get('/home', function () {
     return view('home');
 });
-Route::get('/usuario/show', function(){
-    return view('usuario/show');
-});
+Route::get('usuarios/store', [UsuarioController::class, 'create'])->name('usuarios.create');
+
 Route::get('/usuario/create', function(){
     return view('usuario/create');
 });

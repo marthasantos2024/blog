@@ -1,13 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>inicio</title>
-    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
-</head>
-<body>
-    <h1>PANTALLA DE INICIO</h1>
-</body>
-</html>
+
+{{-- Heredemos la estructura del archivo app.blade.php --}}
+@extends('layout.app')
+
+{{-- Definimos el titulo --}}
+@section('title', 'Inicio')
+
+{{-- Definimos el contenido --}}
+@section('content')
+<h1>Pantalla de Inicio</h1>
+
+@endsection

@@ -12,7 +12,7 @@
     {{-- Nuestro menú --}}
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark mb-4">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Usuario</a>
+            <a class="navbar-brand" href="#">BLOG</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" arialabel="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -20,6 +20,16 @@
             <ul class="navbar-nav">
                 <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="/">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Usuarios
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/usuarios/create">Crear</a></li>
+                    <li><a class="dropdown-item" href="/usuarios/show">Ver</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                  </ul>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -33,7 +43,7 @@
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      publicacion
+                      Publicacion
                     </a>
                     <ul class="dropdown-menu">
                       <li><a class="dropdown-item" href="/publicacion/create">Crear</a></li>
