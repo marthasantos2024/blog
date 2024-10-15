@@ -11,7 +11,7 @@
 <hr>
 
     {{-- Botón para ir al formulario de agregar categorias --}}
-    <a class="btn btn-danger btn-sm" href="/categoria/create">Agregar nueva categoria</a>
+    <a class="btn btn-danger btn-sm" href="/categorias/create">Agregar nueva categoria</a>
 
     <table class="table table-hover table-bordered mt-2">
         <thead>

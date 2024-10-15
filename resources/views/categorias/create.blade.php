@@ -10,7 +10,7 @@
 <h5>Formulario para crear categorias</h5>
 <hr>
 <div class="container">
-    <form action="/categoria/store" method="POST">
+    <form action="/categorias/store/" method="POST">
         @csrf
         <div class="row">
             <div class="col-6">

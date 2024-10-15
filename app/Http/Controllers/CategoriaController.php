@@ -7,10 +7,6 @@ use Illuminate\Http\Request;
 
 class CategoriaController extends Controller
 {
-    public function __construct() 
-{  
-
-}
     /**
      * Display a listing of the resource.
      * 
@@ -19,9 +15,9 @@ class CategoriaController extends Controller
     public function index()
     {
         //Listar todas las categorias
-        $categoria = Categoria::all();
+        $categorias = Categoria::all();
 
-        return view('categoria.show')->with(['categoria' => $categoria]);
+        return view('categorias.show')->with(['categorias' => $categorias]);
 
         
     }
@@ -35,7 +31,7 @@ class CategoriaController extends Controller
     {
 
         // Mostrar vista para crear una nueva categoría
-        return view('categoria.create');
+        return view('categorias.create');
     }
 
     /**
@@ -56,7 +52,7 @@ class CategoriaController extends Controller
         Categoria::create($data);
 
         // Redireccionar a la lista de categorías
-        return redirect('/categoria/show');
+        return redirect('/categorias/show');
     }
 
     /**
@@ -80,7 +76,7 @@ class CategoriaController extends Controller
     public function edit(Categoria $categoria)
     {
         //Obtener la categoría a editar
-        return view('categoria.update')->with(['categoria' => $categoria]);
+        return view('categorias.update')->with(['categoria' => $categoria]);
     }
 
     /**
@@ -105,7 +101,7 @@ class CategoriaController extends Controller
 
 
         // Redireccionar a la lista de categorías
-        return redirect('/categoria/show');
+        return redirect('/categorias/show');
     }
 
     /**

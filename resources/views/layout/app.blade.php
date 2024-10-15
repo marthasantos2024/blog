@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {{-- Aquí irá el título de cada página--}}
-    <title>@yield('title')</title>
-    @vite(['resources/sass/app.scss', 'resources/js/app.js']) 
+    <title>@yield('title')</title> 
+    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
 <body>
     {{-- Nuestro menú --}}

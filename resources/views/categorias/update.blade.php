@@ -11,7 +11,7 @@
 <hr>
 
     <div class="container">
-        <form action="/categoria/update/{{ $categoria->codigo }}" method="POST">
+        <form action="/categorias/update/{{ $categoria->codigo }}" method="POST">
             @csrf
             @method('PUT')
             <div class="row">
